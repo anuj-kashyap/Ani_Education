@@ -3,7 +3,7 @@ import girl from '../assets/girl 1.png'; // Ensure you have the correct path to 
 
 const Hero = () => {
   return (
-    <section className="relative bg-blue-900 text-white px-8 rounded-bl-[200px]">
+    <section className="relative bg-blue-950 text-white px-8 rounded-bl-[150px]">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2">
           <h1 className="text-8xl font-bold mb-4">Learning</h1>
@@ -23,8 +23,8 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="md:w-1/2 mt-10 md:mt-0">
-          <img src={girl} alt="Hero" className="rounded-lg shadow-lg" />
+        <div className="md:w-1/4 md:mt-10">
+          <img src={girl} alt="Hero" className="rounded-lg" />
         </div>
       </div>
     </section>

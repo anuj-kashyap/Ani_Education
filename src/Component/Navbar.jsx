@@ -3,7 +3,8 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="relative bg-[linear-gradient(271.85deg,#0D307B_-2.69%,#265CD3_101.46%)] text-white py-6 px-8 rounded-bl-full">
+    <div className='bg-blue-950 '>
+    <nav className="relative bg-[linear-gradient(201.85deg,#0D307B_-2.69%,#265CD3_101.46%)] text-white py-6 px-8 rounded-bl-[120px]">
       <div className="container mx-auto flex justify-between items-center h-32">
         <div className="flex items-center ml-8">
           <img src={logo} alt="ANI Education logo" className="h-16 w-auto" />
@@ -19,6 +20,7 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
+    </div>
   );
 }
 
