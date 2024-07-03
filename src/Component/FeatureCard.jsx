@@ -1,5 +1,19 @@
 import React from 'react';
 
+const FeatureCard = ({ icon, title, description }) => (
+  <div className="bg-gray-200 rounded-b-2xl rounded-tr-2xl  p-8 flex items-center space-x-10 relative  max-w-sm">
+    <div className="bg-blue-100 rounded-full p-5 absolute -left-10 top-1/2 transform -translate-y-1/2 ">
+      <span className="text-4xl" role="img" aria-label={title}>
+        {icon}
+      </span>
+    </div>
+    <div className="ml-24">
+      <h3 className="font-bold text-blue-900 text-lg">{title}</h3>
+      <p className="text-sm text-gray-700">{description}</p>
+    </div>
+  </div>
+);
+
 const FeatureCards = () => {
   const features = [
     {
@@ -21,19 +35,15 @@ const FeatureCards = () => {
 
   return (
     <div className="bg-gray-100 p-16">
-      <div className="flex justify-center space-x-4">
+      <div className="flex justify-center space-x-16">
         {features.map((feature, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md p-6 flex items-start space-x-4 max-w-sm">
-            <div className="bg-blue-100 rounded-full p-3">
-              <span className="text-2xl" role="img" aria-label={feature.title}>
-                {feature.icon}
-              </span>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
-            </div>
-          </div>
+          <FeatureCard
+            key={index}
+            icon={feature.icon}
+            title={feature.title}
+            description={feature.description}
+          
+          />
         ))}
       </div>
     </div>

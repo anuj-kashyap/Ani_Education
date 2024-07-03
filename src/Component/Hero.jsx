@@ -4,7 +4,7 @@ import girl from '../assets/girl 1.png'
 
 const Hero = () => {
   return (
-    <div className="bg-blue-900 text-white p-8">
+    <div className="bg-blue-900  text-white p-8">
       <div className="container mx-auto flex items-center justify-between">
         <div className="w-1/2">
           <div>

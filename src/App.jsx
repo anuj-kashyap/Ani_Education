@@ -7,6 +7,7 @@ import Courses from './Component/Courses'
 import Knowledge from './Component/Knowledge'
 import Testimonial from './Component/Testimonial'
 import Footer from './Component/Footer'
+import InTouch from './Component/InTouch'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Courses/>
       <Knowledge/>
       <Testimonial/>
+      <InTouch/>
       <Footer/>
       
     </>
