@@ -6,10 +6,10 @@ import FeatureCards from './Component/FeatureCard'
 import Courses from './Component/Courses'
 import Knowledge from './Component/Knowledge'
 import Testimonial from './Component/Testimonial'
+import Footer from './Component/Footer'
 
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
     <>
       <Navbar/>
@@ -18,6 +18,7 @@ function App() {
       <Courses/>
       <Knowledge/>
       <Testimonial/>
+      <Footer/>
       
     </>
   )

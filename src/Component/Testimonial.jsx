@@ -35,10 +35,10 @@ const Testimonial = () => {
                     />
                 </div>
             </div>
-            <div className='w-full relative h-40 mt-20'>
+            {/* <div className='w-full relative h-40 mt-20'>
                 <img src={rect} alt="" className='absolute  w-full h-full object-cover' />
                 <img src={rect2} alt="" className='absolute  w-full h-full object-cover' />
-            </div>
+            </div> */}
         </div>
     );
 };
