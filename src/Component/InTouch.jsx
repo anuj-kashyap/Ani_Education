@@ -11,7 +11,7 @@ const InTouch = () => {
   }
   return (
     <div>
-      <div className='bg-blue-900'>
+      <div className='bg-blue-950'>
         <div className="bg-gray-300 w-full h-[471px] top-[4061px] rounded-[92px_0px_92px_0px]">
           <div className="relative">
             <img src={rect} alt="" className='mx-auto pt-14' />

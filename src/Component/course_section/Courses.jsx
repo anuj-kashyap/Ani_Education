@@ -1,8 +1,8 @@
 import React from 'react';
-import course from '../assets/Rectangle 14.png';
-import ux from '../assets/ux.png';
-import sd from '../assets/sd.png';
-import wd from '../assets/wd.png';
+import course from '../../assets/Rectangle 14.png';
+import ux from '../../assets/ux.png';
+import sd from '../../assets/sd.png';
+import wd from '../../assets/wd.png';
 
 const CourseCategory = ({ title, courses, imageSrc }) => (
   <div className="bg-gray-100 rounded-lg shadow-md p-4">

@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,10 +11,10 @@ const Navbar = () => {
           <img src={logo} alt="ANI Education logo" className="h-16 w-auto" />
         </div>
         <div className="flex items-center space-x-8">
-          <a href="#" className="text-lg font-semibold hover:underline">Home</a>
-          <a href="#" className="text-lg font-semibold hover:underline">Courses</a>
-          <a href="#" className="text-lg font-semibold hover:underline">Instructor</a>
-          <a href="#" className="text-lg font-semibold hover:underline">Contact</a>
+          <Link to='/' className="text-lg font-semibold hover:underline">Home</Link>
+          <Link to='/Course' className="text-lg font-semibold hover:underline">Courses</Link>
+          <Link to='/Instructor' className="text-lg font-semibold hover:underline">Instructor</Link>
+          <Link to='/Contact' className="text-lg font-semibold hover:underline">Contact</Link>
         </div>
         <button className="ml-6 bg-blue-700 px-4 py-2 rounded-full hover:bg-blue-800 transition duration-300">
           Sign In
