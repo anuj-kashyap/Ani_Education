@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'; // Make sure to update this with the corr
 
 const Footer = () => {
   return (
-    <div className="bg-blue-900 text-white py-12 px-8">
+    <div className="bg-blue-950 text-white py-12 px-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
         <div className="mb-8 md:mb-0 md:w-1/4">
           <img src={logo} alt="ANI Education" className="mb-4" />

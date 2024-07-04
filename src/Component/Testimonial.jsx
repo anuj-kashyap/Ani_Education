@@ -17,7 +17,7 @@ const TestimonialCard = ({ name, image, testimonial }) => (
 
 const Testimonial = () => {
     return (
-        <div className="bg-blue-900  text-white p-12">
+        <div className="bg-blue-950  text-white p-12">
             <div className="max-w-5xl mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-2">Hear From Our Students</h1>
                 <p className="text-xl text-center mb-12">Student's Testimonials</p>

@@ -5,7 +5,7 @@ import Hero2 from '../Component/hero_section/Hero2'
 function Instructor() {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Hero2/>
     </div>
   )

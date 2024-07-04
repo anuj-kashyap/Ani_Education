@@ -7,18 +7,20 @@ import Courses1 from '../Component/course_section/Courses1'
 import Category from '../Component/Category'
 import Teacher from '../Component/Teacher'
 import InTouch from '../Component/InTouch'
+import AboutSection from '../Component/GetToKnowUs'
 
 function Course() {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Hero1/>
+        <AboutSection/>
         <Know_us/>
         <Courses1/>
         <Category/>
         <Teacher/>
         <InTouch/>
-        <Footer/>
+        {/* <Footer/> */}
         
     </div>
   )
