@@ -1,6 +1,7 @@
 import React from 'react';
 import girl from '../assets/girl 1.png';
 import flare from '../assets/flare.png'
+import rect3 from '../assets/Rectangle 1.png'
 
 const Hero = () => {
   return (
@@ -15,25 +16,32 @@ const Hero = () => {
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
           <div className="flex items-center space-x-4">
-            <button className="bg-blue-700 px-4 py-2 rounded-full hover:bg-blue-800 transition duration-300">
+            <button className="bg-white px-4 py-2 rounded-full hover:bg-blue-800 transition duration-300 text-black ">
               50+ Courses
             </button>
-            <button className="bg-blue-700 px-4 py-2 rounded-full hover:bg-blue-800 transition duration-300">
+            <button className="bg-white px-4 py-2 rounded-full hover:bg-blue-800 transition duration-300 text-black mr-28">
               Free Trail
             </button>
           </div>
         </div>
-        <div className="md:w-1/4 md:mt-10 relative">
-          <img 
-            src={flare} 
-            alt="" 
-            className='absolute w-[600px] h-[550px] top-[-130px] right-[-1px] z-0'
+        <div className="md:w-1/4 md:mt-10 relative ">
+        
+          <img
+            src={rect3}
+            alt="Background shape"
+            className='absolute z-10 bottom-60 left-1/2 transform -translate-x-1/2  h-auto'
           />
-          <img 
-            src={girl} 
-            alt="Hero" 
-            className="rounded-lg z-10 relative right-[-20px]"
+          <img
+            src={flare}
+            alt="Light flare effect"
+            className='absolute w-[600px] h-[550px] top-[-130px] right-[-1px] z-20'
           />
+          <img
+            src={girl}
+            alt="Student with books"
+            className="rounded-lg z-30 relative right-[-20px]"
+          />
+          
         </div>
       </div>
     </section>
