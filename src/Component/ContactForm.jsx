@@ -4,9 +4,9 @@ import logo from '../assets/logo.png';
 const ContactForm = () => {
   return (
     <div className="bg-blue-950 flex items-center justify-center p-4 rounded-bl-[150px] min-h-screen">
-      {/* <div className="w-full max-w-4xl flex flex-col md:flex-row"> */}
+      
         
-        {/* Left side - Company Info */}
+        
         <div className="md:w-1/2 text-white mb-8 md:mb-0 md:pr-8 order-2 md:order-1 ml-20">
           <div className="mb-8">
             <img src={logo} alt="ANI Education" className="mb-4" />
@@ -38,7 +38,7 @@ const ContactForm = () => {
           </div>
         </div>
         
-        {/* Right side - Contact Form */}
+        
         <div className="md:w-1/2 md:pl-8 order-1 md:order-2 mr-20">
           <form className="space-y-4">
             <input
@@ -70,7 +70,7 @@ const ContactForm = () => {
             </div>
           </form>
         </div>
-      {/* </div> */}
+      
     </div>
   );
 };

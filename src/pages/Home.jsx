@@ -11,14 +11,13 @@ import InTouch from '../Component/InTouch'
 function Home() {
   return (
     <div>
-      {/* <Navbar/> */}
+      
       <Hero/>
       <FeatureCards/>
       <Courses/>
       <Knowledge/>
       <Testimonial/>
-      {/* <InTouch/> */}
-      {/* <Footer/> */}
+      
     </div>
   )
 }

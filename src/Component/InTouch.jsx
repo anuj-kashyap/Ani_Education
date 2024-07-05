@@ -31,7 +31,7 @@ const InTouch = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-white text-blue-900 px-4 py-2 rounded-xl font-semibold ml-4" // added ml-4 for margin
+                  className="bg-white text-blue-900 px-4 py-2 rounded-xl font-semibold ml-4" 
                 >
                   Sent
                 </button>
