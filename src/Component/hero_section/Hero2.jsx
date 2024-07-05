@@ -3,7 +3,7 @@ import man from '../../assets/man.png';
 import flare from '../../assets/flare.png'
 import rect3 from '../../assets/Rectangle 1.png'
 
-const Hero = () => {
+const Hero2 = () => {
   return (
     <section className="relative bg-blue-950 text-white px-8 rounded-bl-[150px] overflow-hidden">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -48,4 +48,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Hero2;
