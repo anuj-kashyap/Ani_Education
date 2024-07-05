@@ -17,7 +17,7 @@ function Home() {
       <Courses/>
       <Knowledge/>
       <Testimonial/>
-      <InTouch/>
+      {/* <InTouch/> */}
       {/* <Footer/> */}
     </div>
   )

@@ -6,6 +6,7 @@ import Course from './pages/Course'
 import Instructor from './pages/Instructor'
 import Navbar from './Component/Navbar'
 import Footer from './Component/Footer'
+import InTouch from './Component/InTouch'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Course' element={<Course/>}/>
         <Route path='/Instructor' element={<Instructor/>}/>
       </Routes>
+      <InTouch/>
       <Footer/>
     </Router>
       

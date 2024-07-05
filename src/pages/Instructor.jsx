@@ -17,7 +17,7 @@ function Instructor() {
         <WhyLearnFromUs/>
         <TopInstructors/>
         <Community/>
-        <InTouch/>
+        {/* <InTouch/> */}
 
         
     </div>

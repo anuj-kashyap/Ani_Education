@@ -19,7 +19,7 @@ function Course() {
         <Courses1/>
         <Category/>
         <Teacher/>
-        <InTouch/>
+        {/* <InTouch/> */}
         {/* <Footer/> */}
         
     </div>
