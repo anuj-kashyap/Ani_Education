@@ -27,9 +27,9 @@ const data = [
 
 const WhyLearnFromUs = () => {
   return (
-    <section className="bg-white py-16 px-8">
+    <section className="bg-white py-20 px-8">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl leading-none font-bold text-blue-900 mb-20 tracking-wider">Why Learn From Our Instructors?</h2>
+        <h2 className="text-4xl leading-none font-bold text-blue-900 mb-40 tracking-wider">Why Learn From Our Instructors?</h2>
         {data.map((item, index) => (
           <div
             key={index}

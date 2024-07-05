@@ -32,26 +32,30 @@ const instructors = [
 
 const MeetOurInstructors = () => {
   return (
-    <section className="bg-blue-900 py-16 px-8 rounded-br-[80px]">
-      <div className="container mx-auto text-center ">
+    <section className="bg-blue-900 py-20 pb- rounded-br-[80px]">
+      <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-white mb-16">Meet Some Of Our Top Instructors</h2>
-        {instructors.map((instructor, index) => (
-          <div key={index} className="mb-16 bg-gray-200 rounded-lg p-6 md:flex md:items-center md:justify-center w-full rounded-br-[80px] rounded-tl-[80px]">
-            <div className="md:w-1/3">
-              <img
-                src={instructor.image}
-                alt={instructor.name}
-                className="rounded-lg ml-10 object-cover md:h-96"
-              />
-            </div>
-            <div className="md:w-2/3 md:pl-12 text-left mt-6 md:mt-0">
-              <h3 className="text-3xl font-bold text-blue-900 mb-2">{instructor.name}</h3>
-              <h4 className="text-xl font-semibold text-gray-700 mb-4">{instructor.title}</h4>
-              <p className="text-lg text-gray-600">{instructor.description}</p>
+      </div>
+      {instructors.map((instructor, index) => (
+        <div key={index} className="bg-gray-200 mb-16 last:mb-0 rounded-br-[80px] rounded-tl-[80px]">
+          <div className="container mx-auto px-4">
+            <div className="py-16 md:flex md:items-center md:justify-center ">
+              <div className="md:w-1/3">
+                <img
+                  src={instructor.image}
+                  alt={instructor.name}
+                  className="rounded-lg mx-auto object-cover md:h-96"
+                />
+              </div>
+              <div className="md:w-2/3 md:pl-12 text-right mt-6 md:mt-0 mr-36">
+                <h3 className="text-5xl font-bold text-blue-900 mb-2">{instructor.name}</h3>
+                <h4 className="text-3xl font-semibold text-gray-700 mb-4">{instructor.title}</h4>
+                <p className="text-lg text-gray-600">{instructor.description}</p>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 };

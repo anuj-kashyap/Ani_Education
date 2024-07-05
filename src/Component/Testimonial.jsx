@@ -19,7 +19,7 @@ const Testimonial = () => {
     return (
         <div className="bg-blue-950  text-white p-12">
             <div className="max-w-5xl mx-auto">
-                <h1 className="text-4xl font-bold text-center mb-2">Hear From Our Students</h1>
+                <h1 className="text-4xl font-bold text-center mb">Hear From Our Students</h1>
                 <p className="text-xl text-center mb-12">Student's Testimonials</p>
 
                 <div className="grid grid-cols-1 max-w-5xl md:grid-cols-2 gap-24">
