@@ -30,7 +30,7 @@ const Hero1 = () => {
           <img
             src={rect3}
             alt="Background shape"
-            className='absolute z-10 bottom-60 left-1/2 transform -translate-x-1/2  h-auto'
+            className='absolute z-10 bottom-60 left-1/2 transform -translate-x-1/2   h-auto'
           />
           <img
             src={flare}

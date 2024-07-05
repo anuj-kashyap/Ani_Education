@@ -60,12 +60,14 @@ const ContactForm = () => {
               placeholder="Leave a Message"
               className="w-[500px] p-3 rounded-3xl bg-gray-200 text-gray-800 h-48"
             ></textarea>
+            <div>
             <button
               type="submit"
-              className="bg-white text-blue-900 font-bold py-2 px-8 rounded-full hover:bg-blue-100 transition duration-300"
+              className="bg-white text-blue-900 font-bold py-2 ml-44 px-8 rounded-full hover:bg-blue-100 transition duration-300"
             >
               Submit
             </button>
+            </div>
           </form>
         </div>
       {/* </div> */}
