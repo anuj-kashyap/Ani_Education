@@ -3,9 +3,11 @@ import course from '../../assets/Rectangle 14.png';
 import ux from '../../assets/ux.png';
 import sd from '../../assets/sd.png';
 import wd from '../../assets/wd.png';
+import SearchIcon from '@mui/icons-material/Search';
+
 
 const CourseCategory = ({ title, courses, imageSrc }) => (
-  <div className="bg-gray-100 rounded-lg shadow-md p-4">
+  <div className="bg-gray-100 rounded-t-lg rounded-bl-lg  shadow-md p-4">
     <div className="bg-white rounded-lg overflow-hidden mb-2">
       <img src={imageSrc} alt={title} className="w-full h-24 object-cover" />
     </div>
@@ -35,38 +37,51 @@ const Courses = () => {
       title: "Web Development",
       courses: "700+",
       imageSrc: wd
+    },
+    {
+      title: "Graphic Design",
+      courses: "700+",
+      imageSrc: course
+    },
+    {
+      title: "UI/UX Design",
+      courses: "700+",
+      imageSrc: ux
+    },
+    {
+      title: "Software Development",
+      courses: "700+",
+      imageSrc: sd
+    },
+    {
+      title: "Web Development",
+      courses: "700+",
+      imageSrc: wd
     }
   ];
 
   return (
-    <div className="bg-blue-900 p-10 rounded-bl-[80px] max-w-6xl mx-auto">
-      <h1 className="text-white text-4xl font-bold mb-3 text-center">Navigate Courses By Category</h1>
-     
-      <div className="flex items-center mb-3">
-        <div className="flex-grow bg-grey-400 border-2 border-white rounded-lg max-w-sm overflow-hidden ml-80 mr-5">
+    <div className="bg-gradient-to-br from-blue-800 to-blue-950 p-6 md:pt-20 pb-24 md:pb-40 rounded-br-[100px] mt-16">
+      <h1 className="text-white text-2xl md:text-4xl font-extrabold text-center">
+        Navigate Courses By Category
+      </h1>
+      <div className="flex gap-4 flex-row items-center w-full justify-center my-5 md:my-8">
+        <div className="border-2 relative border-white rounded-lg overflow-hidden w-full md:w-1/3">
           <input
             type="text"
             placeholder="Search Courses"
-            className="w-full bg-transparent text-white px-3 py-1 text-sm outline-none"
+            className="bg-slate-200  text-slate-950 border border-white px-3 py-2 text-sm outline-none w-full pl-10 md:pl-20"
           />
+          <SearchIcon className='text-[24px] absolute top-2 left-3 md:left-8 text-blue-950'/>
         </div>
-        <button className="bg-white text-blue-900 px-3 py-1 rounded-full font-bold text-sm">
+        <button className="px-8 py-2 text-blue-950 font-bold bg-white rounded-lg cursor-pointer border hover:border-white duration-300 hover:bg-transparent hover:text-white">
           Search
         </button>
       </div>
-     
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
         {categories.map((category, index) => (
           <CourseCategory
             key={index}
-            title={category.title}
-            courses={category.courses}
-            imageSrc={category.imageSrc}
-          />
-        ))}
-        {categories.map((category, index) => (
-          <CourseCategory
-            key={index + categories.length}
             title={category.title}
             courses={category.courses}
             imageSrc={category.imageSrc}

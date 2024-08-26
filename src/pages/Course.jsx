@@ -16,9 +16,7 @@ function Course() {
         <AboutSection/>
         <Courses1/>
         <Category/>
-        <Teacher/>
-        <InTouch/>
-        
+        <Teacher/>        
         
     </div>
   )

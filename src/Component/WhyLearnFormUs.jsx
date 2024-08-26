@@ -27,20 +27,20 @@ const data = [
 
 const WhyLearnFromUs = () => {
   return (
-    <section className="bg-white py-20 px-8">
+    <section className="bg-gray-200 py-5 px-8">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl leading-none font-bold text-blue-900 mb-40 tracking-wider">Why Learn From Our Instructors?</h2>
+        <h2 className="text-4xl leading-none font-bold text-blue-900 mb-20 tracking-wider">Why Learn From Our Instructors?</h2>
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative mb-20 bg-gray-200 rounded-b-[50px] rounded-tr-[50px] pt-24 pb-16 px-6 flex flex-col items-center justify-center"
+            className="relative my-24 bg-gray-300 rounded-b-[50px] rounded-tr-[50px]  p-16 px-6 flex flex-col items-center justify-center"
           >
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-200 p-4 rounded-full">
-              <img src={item.image} alt={item.title} className="w-28 h-28 object-contain" />
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-300 rounded-full w-36 h-36 flex justify-center items-start p-4">
+              <img src={item.image} alt={item.title} className="w-20 h-20" />
             </div>
             <div className="text-center  w-full px-4 md:px-8">
               <h3 className="text-4xl font-bold text-blue-900 mb-4">{item.title}</h3>
-              <p className="text-black text-lg font-semibold max-w-4xl mx-auto">{item.content}</p>
+              <p className="text-black text-lg font-semibold">{item.content}</p>
             </div>
           </div>
         ))}

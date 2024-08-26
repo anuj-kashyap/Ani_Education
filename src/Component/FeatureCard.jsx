@@ -1,13 +1,13 @@
 import React from 'react';
 
 const FeatureCard = ({ icon, title, description }) => (
-  <div className="bg-gray-200 rounded-b-2xl rounded-tr-2xl  p-8 flex items-center space-x-10 relative  max-w-sm">
-    <div className="bg-blue-100 rounded-full p-5 absolute -left-10 top-1/2 transform -translate-y-1/2 ">
+  <div className="bg-gray-200 rounded-b-2xl rounded-tr-2xl p-4 flex items-center  relative w-80 mb-8 md:mb-0">
+    <div className="bg-blue-200 rounded-full p-2 md:p-4 absolute  -left-10 top-1/2 transform -translate-y-1/2">
       <span className="text-4xl" role="img" aria-label={title}>
         {icon}
       </span>
     </div>
-    <div className="ml-24">
+    <div className="ml-16">
       <h3 className="font-bold text-blue-900 text-lg">{title}</h3>
       <p className="text-sm text-gray-700">{description}</p>
     </div>
@@ -34,15 +34,14 @@ const FeatureCards = () => {
   ];
 
   return (
-    <div className="bg-gray-100 p-16">
-      <div className="flex justify-center space-x-16">
+    <div className="py-8 md:py-20">
+      <div className="flex justify-center items-center md:justify-evenly flex-col md:flex-row">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}
             icon={feature.icon}
             title={feature.title}
             description={feature.description}
-          
           />
         ))}
       </div>

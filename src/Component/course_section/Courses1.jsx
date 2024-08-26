@@ -3,6 +3,7 @@ import course from '../../assets/Rectangle 14.png';
 import ux from '../../assets/ux.png';
 import sd from '../../assets/sd.png';
 import wd from '../../assets/wd.png';
+import SearchIcon from '@mui/icons-material/Search';
 
 const CourseCategory = ({ title, courses, imageSrc }) => (
   <div className="bg-gray-100 rounded-lg shadow-md p-4">
@@ -35,65 +36,92 @@ const Courses1 = () => {
       title: "Web Development",
       courses: "700+",
       imageSrc: wd
+    },
+    {
+      title: "Graphic Design",
+      courses: "700+",
+      imageSrc: course
+    },
+    {
+      title: "UI/UX Design",
+      courses: "700+",
+      imageSrc: ux
+    },
+    {
+      title: "Software Development",
+      courses: "700+",
+      imageSrc: sd
+    },
+    {
+      title: "Web Development",
+      courses: "700+",
+      imageSrc: wd
+    },
+    {
+      title: "Graphic Design",
+      courses: "700+",
+      imageSrc: course
+    },
+    {
+      title: "UI/UX Design",
+      courses: "700+",
+      imageSrc: ux
+    },
+    {
+      title: "Software Development",
+      courses: "700+",
+      imageSrc: sd
+    },
+    {
+      title: "Web Development",
+      courses: "700+",
+      imageSrc: wd
+    },
+    {
+      title: "Graphic Design",
+      courses: "700+",
+      imageSrc: course
+    },
+    {
+      title: "UI/UX Design",
+      courses: "700+",
+      imageSrc: ux
+    },
+    {
+      title: "Software Development",
+      courses: "700+",
+      imageSrc: sd
+    },
+    {
+      title: "Web Development",
+      courses: "700+",
+      imageSrc: wd
     }
   ];
 
   return (
-    <div className="bg-blue-900  [background:linear-gradient(114.12deg,#2051BC_1.33%,#10285C_98.67%)] p-16 rounded-bl-[80px] max-w-8xl mt-10 mb-10 mx-auto">
-      <h1 className="text-white text-[62px] font-bold leading-[92.69px] tracking-[-0.42625004053115845px] text-center">Course For You </h1>
-      <h1 className="text-white text-[46px] font-light leading-[68.77px] tracking-[9px] text-center">Get Started Your Study </h1>
-      
-      <div className="flex items-center mb-3 ml-52">
-        <div className="flex-grow bg-gray-300 border-2 border-white rounded-lg max-w-sm mt-5 mb-5 overflow-hidden ml-60 mr-5">
+    <div className="bg-gradient-to-br from-blue-800 to-blue-950 p-6 md:pt-20 pb-24 md:pb-40 rounded-br-[100px] mt-16">
+      <h1 className="text-white text-2xl md:text-5xl font-extrabold text-center">
+        Course for you
+      </h1>
+      <h2 className='text-whte text-xl md:text-2xl text-white text-center my-2 tracking-widest'>Get Started Your Study</h2>
+      <div className="flex gap-4 flex-row items-center w-full justify-center my-5 md:my-8">
+        <div className="border-2 relative border-white rounded-lg overflow-hidden w-full md:w-1/3">
           <input
             type="text"
             placeholder="Search Courses"
-            className="w-full bg-transparent text-white px-3 py-1 text-sm outline-none"
+            className="bg-slate-200  text-slate-950 border border-white px-3 py-2 text-sm outline-none w-full pl-10 md:pl-20"
           />
+          <SearchIcon className='text-[24px] absolute top-2 left-3 md:left-8 text-blue-950'/>
         </div>
-        <button 
-        placeholder="Search"
-        className="bg-white text-blue-900 px-3 py-1 rounded-full font-bold text-sm">
+        <button className="px-8 py-2 text-blue-950 font-bold bg-white rounded-lg cursor-pointer border hover:border-white duration-300 hover:bg-transparent hover:text-white">
           Search
         </button>
       </div>
-     
-      <div className="grid grid-cols-2 sm:grid-cols-4   gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-14">
         {categories.map((category, index) => (
           <CourseCategory
             key={index}
-            title={category.title}
-            courses={category.courses}
-            imageSrc={category.imageSrc}
-          />
-        ))}
-        {categories.map((category, index) => (
-          <CourseCategory
-            key={index + categories.length}
-            title={category.title}
-            courses={category.courses}
-            imageSrc={category.imageSrc}
-          />
-        ))}
-        {categories.map((category, index) => (
-          <CourseCategory
-            key={index + categories.length}
-            title={category.title}
-            courses={category.courses}
-            imageSrc={category.imageSrc}
-          />
-        ))}
-        {categories.map((category, index) => (
-          <CourseCategory
-            key={index + categories.length}
-            title={category.title}
-            courses={category.courses}
-            imageSrc={category.imageSrc}
-          />
-        ))}
-        {categories.map((category, index) => (
-          <CourseCategory
-            key={index + categories.length}
             title={category.title}
             courses={category.courses}
             imageSrc={category.imageSrc}

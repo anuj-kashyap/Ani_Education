@@ -1,54 +1,50 @@
-import React from 'react'
-import test1 from '../assets/Ellipse 6.png'
-import test2 from '../assets/Ellipse 7.png'
-import rect from '../assets/rectangle.png'
-import rect2 from '../assets/Rectangle 20.png'
+import React from 'react';
+import test1 from '../assets/Ellipse 6.png';
+import test2 from '../assets/Ellipse 7.png';
 
-const TestimonialCard = ({ name, image, testimonial }) => (
-    <div className="bg-gray-200 rounded-b-2xl rounded-tr-2xl p-10 flex items-center space-x-8 relative">
-        <img src={image} alt={name} className="w-24 h-24 rounded-full object-cover absolute -left-11 top-1/2 transform -translate-y-1/2 border-4 border-blue-900" />
-        <div className="ml-24">
-            <h3 className="font-bold text-blue-900 text-lg">{name}</h3>
-            <p className="text-sm text-gray-700">{testimonial}</p>
-        </div>
+const TestimonialCard = ({ name, image, designation }) => (
+  <div className="bg-gray-200 rounded-b-[30px] rounded-tr-[30px] p-6 flex items-center w-72 md:w-96 relative">
+    <img src={image} alt={name} className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover absolute -left-6 sm:-left-11 top-1/2 transform -translate-y-1/2" />
+    <div className="ml-20 sm:ml-24 w-full py-10 flex flex-col justify-center items-center">
+      <h3 className="font-bold text-blue-900 text-2xl">{name}</h3>
+      <p className="text-lg text-gray-700 text-justify">{designation}</p>
     </div>
+  </div>
 );
 
-
-const Teacher = () => {
-    return (
-        <div className="bg-blue-950  text-white p-12">
-            <div className="max-w-5xl mx-auto">
-                <h1 className="text-[71.84px] mr-44 font-bold leading-[107.41px] text-right">Meet The Teacher</h1>
-                <p className="text-[41px] font-normal mb-8 leading-[61.3px] text-center">Who Teach You</p>
-
-                <div className="grid grid-cols-1 max-w-5xl md:grid-cols-2 gap-24">
-                    <TestimonialCard
-                        name="Anhishek Sharma"
-                        image={test1} 
-                        testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <TestimonialCard
-                        name="Kajal Sharma"
-                        image={test2}
-                        testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-                <div className="grid grid-cols-1 mt-10 max-w-5xl md:grid-cols-2 gap-24">
-                    <TestimonialCard
-                        name="Anhishek Sharma"
-                        image={test1} 
-                        testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                    <TestimonialCard
-                        name="Kajal Sharma"
-                        image={test2}
-                        testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    />
-                </div>
-            </div>
-           
+const Testimonial = () => {
+  return (
+    <div className="bg-blue-950 text-white p-6 md:p-10">
+      <div className="w-full">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-center mb-3 md:mb-5">Meet The Teacher</h1>
+        <p className="text-xl md:text-4xl text-center mb-10 sm:mb-16">Who Teach You</p>
+        <div className="flex flex-col items-center md:flex-row justify-evenly gap-y-8 my-5 md:my-10">
+          <TestimonialCard
+            name="Anhishek Sharma"
+            image={test1}
+            designation="Developer"
+          />
+          <TestimonialCard
+            name="Kajal Sharma"
+            image={test2}
+            designation="Developer"  
+          />
         </div>
-    );
+        <div className="flex flex-col items-center md:flex-row justify-evenly gap-y-8 my-5 md:my-10">
+          <TestimonialCard
+            name="Anhishek Sharma"
+            image={test1}
+            designation="Developer"
+          />
+          <TestimonialCard
+            name="Kajal Sharma"
+            image={test2}
+            designation="Developer"  
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
-export default Teacher
+
+export default Testimonial;

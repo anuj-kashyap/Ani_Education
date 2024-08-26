@@ -9,7 +9,7 @@ import Hero2 from '../Component/hero_section/Hero2'
 
 function Instructor() {
   return (
-    <div>
+    <div >
         
         <Hero2/>
         <MeetOurInstructors/>
